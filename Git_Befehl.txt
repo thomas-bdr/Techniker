@@ -38,6 +38,9 @@ git push origin main
 Aktualsieren des akutellen repository
 pull origin main
 
+Speicher der Änderung des aktuellen main Repository in das lokales Repository
+git fetch
+
 
 
 
