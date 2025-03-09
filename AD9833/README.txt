@@ -1,1 +1,1 @@
-Das ist der Abschnitt für den Frequenzgenerator AD9833.
+Das ist der Abschnitt für das Programm für den Frequenzgenerator AD9833.
