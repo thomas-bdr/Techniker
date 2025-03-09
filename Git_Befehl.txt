@@ -1,0 +1,43 @@
+Das sind Git-Befehle: 
+
+Versionskontrolle:
+gh --version
+
+installieren git und github
+sudo apt install git
+sudo apt install gh
+
+Configuration git
+git config --global user.name "Anton Dieter"
+git config --global email "Das@hotmai.de"
+
+login in Github
+gh auth login
+--> Login in über Webseite
+
+Repository klonen
+git clone https://github.com/thomas-bdr/Techniker.git ~/Git
+localer Ablageort: ~/Git/Techniker
+
+Entfernen des localen Repository
+rm -rf ~/Git/Techniker
+
+Hinzufügen der akutellen Änderung des aktuellen Repositoriy
+git add .
+
+Commiten des localen Repositories in das local Git 
+git commit -m "Kommentar"
+git commit 
+
+Anzeigen ob 
+git branch
+
+Hochladen auf das orginale Git Repository
+git push origin main
+
+Aktualsieren des akutellen repository
+pull origin main
+
+
+
+
