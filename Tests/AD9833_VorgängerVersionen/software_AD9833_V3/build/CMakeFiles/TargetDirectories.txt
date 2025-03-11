@@ -1,0 +1,3 @@
+/home/thomas/Technikarbeit/software_ta/build/CMakeFiles/MeinProgramm.dir
+/home/thomas/Technikarbeit/software_ta/build/CMakeFiles/edit_cache.dir
+/home/thomas/Technikarbeit/software_ta/build/CMakeFiles/rebuild_cache.dir

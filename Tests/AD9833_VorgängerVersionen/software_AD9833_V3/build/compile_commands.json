@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/thomas/Technikarbeit/software_ta/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -g -o CMakeFiles/MeinProgramm.dir/main.cpp.o -c /home/thomas/Technikarbeit/software_ta/main.cpp",
+  "file": "/home/thomas/Technikarbeit/software_ta/main.cpp"
+},
+{
+  "directory": "/home/thomas/Technikarbeit/software_ta/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -g -o CMakeFiles/MeinProgramm.dir/AD9833_lib.cpp.o -c /home/thomas/Technikarbeit/software_ta/AD9833_lib.cpp",
+  "file": "/home/thomas/Technikarbeit/software_ta/AD9833_lib.cpp"
+},
+{
+  "directory": "/home/thomas/Technikarbeit/software_ta/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -g -o CMakeFiles/MeinProgramm.dir/spi_linux_lib.cpp.o -c /home/thomas/Technikarbeit/software_ta/spi_linux_lib.cpp",
+  "file": "/home/thomas/Technikarbeit/software_ta/spi_linux_lib.cpp"
+},
+{
+  "directory": "/home/thomas/Technikarbeit/software_ta/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -g -o CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o -c /home/thomas/Technikarbeit/software_ta/AD9833CTL.cpp",
+  "file": "/home/thomas/Technikarbeit/software_ta/AD9833CTL.cpp"
+}
+]

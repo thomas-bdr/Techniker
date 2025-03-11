@@ -1,0 +1,3 @@
+/home/thomas/Technikarbeit/software_AD9833_V2/build/CMakeFiles/MeinProgramm.dir
+/home/thomas/Technikarbeit/software_AD9833_V2/build/CMakeFiles/edit_cache.dir
+/home/thomas/Technikarbeit/software_AD9833_V2/build/CMakeFiles/rebuild_cache.dir

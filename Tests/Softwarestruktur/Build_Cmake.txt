@@ -1,0 +1,12 @@
+1. create: CMAKELists.txt 
+    Addlines: 
+        project(Techniker)
+        add_executable(MeinProgramm main.cpp funktion.cpp)
+
+2. bash: mkdir build
+3. bash: cd build
+
+4. bash: cmake ..
+5. bash: make
+
+6. sudo ./MeinProgamm
