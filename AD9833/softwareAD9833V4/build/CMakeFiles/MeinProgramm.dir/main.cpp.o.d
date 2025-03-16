@@ -1,5 +1,5 @@
 CMakeFiles/MeinProgramm.dir/main.cpp.o: \
- /home/thomas/Technikarbeit/software_AD9833_V2/main.cpp \
+ /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -200,7 +200,7 @@ CMakeFiles/MeinProgramm.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.h \
+ /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.h \
  /usr/include/c++/12/cassert /usr/include/assert.h \
  /usr/include/c++/12/array /usr/include/c++/12/compare \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_uninitialized.h \

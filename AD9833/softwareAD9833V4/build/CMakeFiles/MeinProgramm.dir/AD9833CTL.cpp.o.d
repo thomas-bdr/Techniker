@@ -1,5 +1,5 @@
 CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o: \
- /home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.cpp \
+ /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -201,7 +201,7 @@ CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o: \
  /usr/lib/linux/uapi/arm64/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
  /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
  /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
- /home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.h \
+ /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.h \
  /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/12/cassert /usr/include/assert.h \
  /usr/include/c++/12/array /usr/include/c++/12/compare

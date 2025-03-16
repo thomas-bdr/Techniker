@@ -113,11 +113,20 @@ public:
 
 int main()
 {   
+    AD9833 spi;  
+
+    uint16_t data = 0xA118;  
+
+    spi.SPI_sendData16Bit(data);
+    std::cout << data << std::endl;
+
     //unitytest_class_CTLREG();
-    unityTest_class_WAVECONFIG();
+    //unityTest_class_WAVECONFIG();
     //unityTest_class_SPI();
 
+    /*
     SEQ sed;
     sed.initialization();
+    */
     return 0;
 }

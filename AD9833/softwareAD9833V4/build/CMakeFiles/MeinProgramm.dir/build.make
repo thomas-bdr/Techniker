@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Technikarbeit/software_AD9833_V2
+CMAKE_SOURCE_DIR = /home/thomas/Git/Techniker/AD9833/softwareAD9833V4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Technikarbeit/software_AD9833_V2/build
+CMAKE_BINARY_DIR = /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MeinProgramm.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/MeinProgramm.dir/progress.make
 include CMakeFiles/MeinProgramm.dir/flags.make
 
 CMakeFiles/MeinProgramm.dir/main.cpp.o: CMakeFiles/MeinProgramm.dir/flags.make
-CMakeFiles/MeinProgramm.dir/main.cpp.o: /home/thomas/Technikarbeit/software_AD9833_V2/main.cpp
+CMakeFiles/MeinProgramm.dir/main.cpp.o: /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/main.cpp
 CMakeFiles/MeinProgramm.dir/main.cpp.o: CMakeFiles/MeinProgramm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Technikarbeit/software_AD9833_V2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MeinProgramm.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MeinProgramm.dir/main.cpp.o -MF CMakeFiles/MeinProgramm.dir/main.cpp.o.d -o CMakeFiles/MeinProgramm.dir/main.cpp.o -c /home/thomas/Technikarbeit/software_AD9833_V2/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MeinProgramm.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MeinProgramm.dir/main.cpp.o -MF CMakeFiles/MeinProgramm.dir/main.cpp.o.d -o CMakeFiles/MeinProgramm.dir/main.cpp.o -c /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/main.cpp
 
 CMakeFiles/MeinProgramm.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MeinProgramm.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/Technikarbeit/software_AD9833_V2/main.cpp > CMakeFiles/MeinProgramm.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/main.cpp > CMakeFiles/MeinProgramm.dir/main.cpp.i
 
 CMakeFiles/MeinProgramm.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MeinProgramm.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/Technikarbeit/software_AD9833_V2/main.cpp -o CMakeFiles/MeinProgramm.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/main.cpp -o CMakeFiles/MeinProgramm.dir/main.cpp.s
 
 CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o: CMakeFiles/MeinProgramm.dir/flags.make
-CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o: /home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.cpp
+CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o: /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.cpp
 CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o: CMakeFiles/MeinProgramm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Technikarbeit/software_AD9833_V2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o -MF CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o.d -o CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o -c /home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o -MF CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o.d -o CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o -c /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.cpp
 
 CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.cpp > CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.cpp > CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.i
 
 CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.cpp -o CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.cpp -o CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.s
 
 # Object files for target MeinProgramm
 MeinProgramm_OBJECTS = \
@@ -109,7 +109,7 @@ MeinProgramm: CMakeFiles/MeinProgramm.dir/main.cpp.o
 MeinProgramm: CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o
 MeinProgramm: CMakeFiles/MeinProgramm.dir/build.make
 MeinProgramm: CMakeFiles/MeinProgramm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Technikarbeit/software_AD9833_V2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MeinProgramm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MeinProgramm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MeinProgramm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/MeinProgramm.dir/clean:
 .PHONY : CMakeFiles/MeinProgramm.dir/clean
 
 CMakeFiles/MeinProgramm.dir/depend:
-	cd /home/thomas/Technikarbeit/software_AD9833_V2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Technikarbeit/software_AD9833_V2 /home/thomas/Technikarbeit/software_AD9833_V2 /home/thomas/Technikarbeit/software_AD9833_V2/build /home/thomas/Technikarbeit/software_AD9833_V2/build /home/thomas/Technikarbeit/software_AD9833_V2/build/CMakeFiles/MeinProgramm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Git/Techniker/AD9833/softwareAD9833V4 /home/thomas/Git/Techniker/AD9833/softwareAD9833V4 /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build /home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build/CMakeFiles/MeinProgramm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MeinProgramm.dir/depend
 

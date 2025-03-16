@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/thomas/Technikarbeit/software_AD9833_V2/AD9833CTL.cpp" "CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o" "gcc" "CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o.d"
-  "/home/thomas/Technikarbeit/software_AD9833_V2/main.cpp" "CMakeFiles/MeinProgramm.dir/main.cpp.o" "gcc" "CMakeFiles/MeinProgramm.dir/main.cpp.o.d"
+  "/home/thomas/Git/Techniker/AD9833/softwareAD9833V4/AD9833CTL.cpp" "CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o" "gcc" "CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o.d"
+  "/home/thomas/Git/Techniker/AD9833/softwareAD9833V4/main.cpp" "CMakeFiles/MeinProgramm.dir/main.cpp.o" "gcc" "CMakeFiles/MeinProgramm.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
