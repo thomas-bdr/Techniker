@@ -30,10 +30,6 @@ void unitytest_class_CTLREG()
 void unityTest_class_WAVECONFIG()
 {
     AD9833 a;
-    a.printFreqStream(12500000);
-    a.printPhaseStream(6);
-    a.printPhaseStream((2.0 * M_PI));
-    a.printPhaseStream((6.282));
 
     a.printConfPhaseWord(6.282, AD9833::PHASE1);
     a.printConfPhaseWord(6.282, AD9833::PHASE0);
@@ -90,13 +86,14 @@ private:
 public:
     void initialization()
     {
+
         setFlag(AD9833::RESET);
         setFlag(AD9833::B28);
         print();
         SPI_sendData16Bit(getword());
 
-        SPI_sendData32Bit(confFWord(2000,AD9833::FREQ0));
-        SPI_sendData32Bit(confFWord(4000,AD9833::FREQ1));
+        SPI_sendData32Bit(confFWord(0,AD9833::FREQ0));
+        SPI_sendData32Bit(confFWord(0,AD9833::FREQ1));
 
         SPI_sendData16Bit(confPhaseWord(0,AD9833::PHASE0));
         SPI_sendData16Bit(confPhaseWord(M_PI,AD9833::PHASE1));
@@ -106,6 +103,33 @@ public:
         SPI_sendData16Bit(getword());
     }
 
+    void init()
+    {
+        AD9833 manual;
+        manual.setFlag(manual.RESET);
+        manual.print();
+        manual.SPI_sendData16Bit(manual.getword());
+        //usleep(5000);
+        manual.SPI_sendData16Bit(0);
+    
+        manual.setFlag(manual.B28);
+        manual.print();
+        
+        //manual.printConfFWord(0,manual.FREQ0);
+        manual.SPI_sendData32Bit(0x40FF4F00);
+        //manual.printConfFWord(0,manual.FREQ1);
+        manual.SPI_sendData32Bit(0x8000800F);
+    
+        manual.SPI_sendData16Bit(0xC000);
+        manual.SPI_sendData16Bit(0xE000);
+    
+        //manual.setFlag(manual.FSELECT);
+        //manual.setFlag(manual.PSELECT);
+        manual.clearFlag(manual.RESET);
+        manual.print();
+        manual.SPI_sendData16Bit(manual.getword());
+    }
+
     
 
 
@@ -113,20 +137,36 @@ public:
 
 int main()
 {   
-    AD9833 spi;  
-
-    uint16_t data = 0xA118;  
-
-    spi.SPI_sendData16Bit(data);
-    std::cout << data << std::endl;
-
     //unitytest_class_CTLREG();
     //unityTest_class_WAVECONFIG();
     //unityTest_class_SPI();
+    AD9833 manual;
+    
+    //SEQ sed;
+    //sed.initialization();
+    //usleep(5000);
+    manual.SPI_sendData16Bit(0);
 
-    /*
-    SEQ sed;
-    sed.initialization();
-    */
+    manual.setFlag(manual.B28);
+    manual.print();
+    
+    //manual.printConfFWord(0,manual.FREQ0);
+    manual.SPI_sendData32Bit(0x40FF4F00);
+    //manual.printConfFWord(0,manual.FREQ1);
+    manual.SPI_sendData32Bit(0x8000800F);
+
+    manual.SPI_sendData16Bit(0xC000);
+    manual.SPI_sendData16Bit(0xE000);
+
+    //manual.setFlag(manual.FSELECT);
+    //manual.setFlag(manual.PSELECT);
+    manual.clearFlag(manual.RESET);
+    manual.print();
+    manual.SPI_sendData16Bit(manual.getword());
+
+
+
+
+    
     return 0;
 }

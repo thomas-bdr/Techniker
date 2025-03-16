@@ -26,7 +26,7 @@ public:
 // ///////////////////////// //
 
 private:
-    volatile uint16_t word = 0;
+    uint16_t word = 0;
 
 public:
     enum Flags : uint16_t
@@ -79,6 +79,12 @@ public:
 // /////Waveform Generat//// //
 // ///////////////////////// //
 private:
+    uint16_t phaseReg01 = 0;
+    uint16_t phaseReg02 = 0;
+
+    uint32_t freqReg00 = 0;
+    uint32_t freqReg01 = 0;
+
     static constexpr uint32_t MCLK = 25000000;
 
     static constexpr double TWO_PI = 2 * M_PI;
@@ -114,16 +120,6 @@ private:
     }   
 
 public:
-    //print calculated frequency word
-    //Return: VOid
-    //Attribute: uint64_t frequency
-    void printFreqStream(uint64_t frequency);
-
-    //print calculated phase word
-    //Return: void
-    //Attribute: double phase
-    void printPhaseStream(double phase);
-
     //print configured phase word
     //Return: void
     //Attribute: double phase, bool phaseReg
@@ -155,6 +151,7 @@ private:
     uint8_t mode = SPI_MODE_0;
     uint8_t bits = 8;         // 8 oder 16 Bit pro Wort
     uint32_t speed = 50000;   // SPI Geschwindigkeit in Hz
+
 
     void SPI_sendData(const std::vector<uint8_t> &tx_buffer, std::vector<uint8_t> &rx_buffer)
     {

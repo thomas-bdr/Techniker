@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/MeinProgramm.dir/main.cpp.o CMakeFiles/MeinProgramm.dir/AD9833CTL.cpp.o -o MeinProgramm 

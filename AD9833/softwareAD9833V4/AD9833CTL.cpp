@@ -72,13 +72,7 @@ void AD9833::print() const
 void AD9833::printConfPhaseWord(double phase, Flags phaseReg)
 {
     uint32_t phaseWord = confPhaseWord(phase, phaseReg);
-    std::cout << "Configured control register word for Phase: " << std::bitset<16>(phaseWord) << std::endl;
-}
-
-void AD9833::printPhaseStream(double phase)
-{
-    uint16_t pword = calcPhase(phase);
-    std::cout << "Bitstream of Phase: "<< std::hex << pword << std::endl;
+    std::cout << "Phaseword: " << std::bitset<16>(phaseWord) << std::endl;
 }
 
 uint16_t AD9833::confPhaseWord(double phase, Flags type)
@@ -103,16 +97,10 @@ uint16_t AD9833::confPhaseWord(double phase, Flags type)
 void AD9833::printConfFWord(uint32_t freq, Flags type)
 {
     uint32_t freqword = confFWord(freq, type);
-    std::cout << "Configured control register word for Frequency: " << std::bitset<32>(freqword) << std::endl;
+    std::cout << "FrequencyWord: " << std::bitset<32>(freqword) << std::endl;
 }
 
-void AD9833::printFreqStream(uint64_t frequency)
-{
-    uint32_t word = calcFreq(frequency);
-    std::cout  << "BitStream: " << std::bitset<32>(word)<<std::endl;
-}
-
-// Verwendung von Controll Register integrieren
+// Verwendung von Controll Register integrieren!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 uint32_t AD9833::confFWord(uint32_t freq, Flags type)
 {
     bool freqReg{0};
@@ -169,6 +157,7 @@ uint32_t AD9833::confFWord(uint32_t freq, Flags type)
 // /////SPI lib function//// //
 // ///////////////////////// // 
 
+//Attribute: data -> Input Stream
 void AD9833::SPI_sendData16Bit(const uint16_t& data)
 {
     std::vector<uint8_t> tx_buffer = 
