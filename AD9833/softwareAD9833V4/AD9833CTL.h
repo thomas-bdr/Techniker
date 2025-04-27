@@ -148,7 +148,7 @@ private:
 
     const char *device = "/dev/spidev0.0";
     int spi_fd = -1;
-    uint8_t mode = SPI_MODE_0;
+    uint8_t mode = SPI_MODE_2;
     uint8_t bits = 8;         // 8 oder 16 Bit pro Wort
     uint32_t speed = 50000;   // SPI Geschwindigkeit in Hz
 

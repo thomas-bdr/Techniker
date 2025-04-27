@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -g -o CMakeFiles/MeinProgramm.dir/main.cpp.o -c /home/thomas/Git/Techniker/AD9833/softwareAD9833V5/main.cpp",
+  "file": "/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/main.cpp"
+},
+{
+  "directory": "/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -g -o CMakeFiles/MeinProgramm.dir/AD9833.cpp.o -c /home/thomas/Git/Techniker/AD9833/softwareAD9833V5/AD9833.cpp",
+  "file": "/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/AD9833.cpp"
+}
+]

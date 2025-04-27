@@ -1,4 +1,4 @@
-# Install script for directory: /home/thomas/Git/Techniker/AD9833/softwareAD9833V4
+# Install script for directory: /home/thomas/Git/Techniker/AD9833/softwareAD9833V5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/thomas/Git/Techniker/AD9833/softwareAD9833V4/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

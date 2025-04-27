@@ -116,12 +116,16 @@ public:
         manual.print();
         
         //manual.printConfFWord(0,manual.FREQ0);
-        manual.SPI_sendData32Bit(0x40FF4F00);
+        manual.SPI_sendData32Bit(0x40004031);
+        manual.SPI_sendData16Bit(0);
         //manual.printConfFWord(0,manual.FREQ1);
-        manual.SPI_sendData32Bit(0x8000800F);
+        manual.SPI_sendData32Bit(0x80008031);
+        manual.SPI_sendData16Bit(0);
     
         manual.SPI_sendData16Bit(0xC000);
+        manual.SPI_sendData16Bit(0);
         manual.SPI_sendData16Bit(0xE000);
+        manual.SPI_sendData16Bit(0);
     
         //manual.setFlag(manual.FSELECT);
         //manual.setFlag(manual.PSELECT);
@@ -129,18 +133,19 @@ public:
         manual.print();
         manual.SPI_sendData16Bit(manual.getword());
     }
-
-    
-
-
 };
 
 int main()
 {   
+    SEQ sed;
+    sed.init();
+    AD9833 setup;
+    setup.
+    //sed.setFlag(sed.RESET);
     //unitytest_class_CTLREG();
     //unityTest_class_WAVECONFIG();
     //unityTest_class_SPI();
-    AD9833 manual;
+   /* AD9833 manual;
     
     //SEQ sed;
     //sed.initialization();
@@ -162,7 +167,7 @@ int main()
     //manual.setFlag(manual.PSELECT);
     manual.clearFlag(manual.RESET);
     manual.print();
-    manual.SPI_sendData16Bit(manual.getword());
+    manual.SPI_sendData16Bit(manual.getword());*/
 
 
 
