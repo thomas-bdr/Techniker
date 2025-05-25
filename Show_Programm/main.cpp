@@ -1,42 +1,67 @@
 #include <iostream>
 #include <chrono>
+#include <vector>
 
 #include "AD9833.h"
 
 using namespace std;
 
+enum class FrequencyPreset
+{
+    FREQ_1kHz,
+    FREQ_10KHZ,
+    FREQ_100KHZ,
+    FREQ_200KHZ,
+    FREQ_300KHZ,
+    FREQ_500KHZ,
+    FREQ_1MHZ
+};
+
+inline double getFrequencyValue(FrequencyPreset preset)
+{
+    switch (preset)
+    {
+        case FrequencyPreset::FREQ_1kHz:    return 1000;
+        case FrequencyPreset::FREQ_10KHZ:   return 10000;
+        case FrequencyPreset::FREQ_100KHZ:  return 100000;
+        case FrequencyPreset::FREQ_200KHZ:  return 200000;
+        case FrequencyPreset::FREQ_300KHZ:  return 300000;
+        case FrequencyPreset::FREQ_500KHZ:  return 500000;
+        case FrequencyPreset::FREQ_1MHZ:    return 1000000;
+        default:                            return 100;
+    }
+}
+
 struct DemoCycle
 {
-    const double setupFrequency0 = 1000;
-    const double setupFrequency1 = 10000;
-    const double setupFrequency2 = 100000;
-    const double setupFrequency3 = 500000;
-    const double setupFrequency4 = 1000000;
+    AD9833 AD;
 
-    auto start = clock::now();
-    auto end = clock::now();
+    using clock = std::chrono::high_resolution_clock;
 
-    void initCycle(const double mclk = 19480000)
+    clock::time_point start;
+    clock::time_point end;
+
+    DemoCycle(uint32_t mclk = 19480000): AD(mclk){}
+    ~DemoCycle(){}
+
+    void initCycle(uint32_t frequency)
     {
-        AD9833 AD(mclk);
         AD.Initial();
-        using clock = std::chrono::high_resolution_clock;
-        //cycle 0
-        AD.ApplySignal(SINE_WAVE, REG0, REG1, setupFrequency0, 0);
-        AD.ApplySignal(SINE_WAVE, REG1, REG0, 1000, 0);
+        AD.ApplySignal(SINE_WAVE, REG0, REG1, frequency, 0);
+        AD.ApplySignal(SINE_WAVE, REG1, REG0, frequency, 0);
         AD.SetOutputSource(REG0, REG1);
         printOutRealSetup();
         readValueADC();
     }
 
-    void printOutRealSetup()
+    void printOutRealSetup(void)
     {
         cout << "actual Frequency Register: 0" << AD.GetActualProgrammedFrequency(REG0) << endl
         << "actual Phase Register: 1" << AD.GetActualProgrammedPhase(REG1) << endl
         << "Resolution: " << AD.GetResolution() << endl;
     }
 
-    void readValueADC()
+    void readValueADC(void)
     {
         start = clock::now();
         for(int i = 1;i < 1000e6; i++){};
@@ -47,7 +72,7 @@ struct DemoCycle
 
     void repeateCycle(const double frequency)
     {
-        AD.SetFrequency(REG0, setupFrequency1);
+        AD.SetFrequency(REG0, frequency);
         printOutRealSetup();
         readValueADC();
     }
@@ -57,17 +82,24 @@ struct DemoCycle
 int main()
 {   
     DemoCycle showCase;
-    showCase.initCycle();
+    showCase.initCycle(getFrequencyValue(FrequencyPreset::FREQ_1kHz));
 
-    showCase.repeateCycle(showCase.setupFrequency0);
+    std::vector<FrequencyPreset> presets =
+    {
+        FrequencyPreset::FREQ_1kHz,
+        FrequencyPreset::FREQ_10KHZ,
+        FrequencyPreset::FREQ_100KHZ,
+        FrequencyPreset::FREQ_200KHZ,
+        FrequencyPreset::FREQ_300KHZ,
+        FrequencyPreset::FREQ_500KHZ,
+        FrequencyPreset::FREQ_1MHZ
+    };
 
-    showCase.repeateCycle(showCase.setupFrequency1);
-
-    showCase.repeateCycle(showCase.setupFrequency2);
-
-    showCase.repeateCycle(showCase.setupFrequency3);
-
-    showCase.repeateCycle(showCase.setupFrequency4);
+    for(const auto& preset: presets)
+    {
+        double freq = getFrequencyValue(preset);
+        showCase.repeateCycle(freq);
+    }
     
     return 0;
 }
