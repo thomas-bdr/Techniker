@@ -1,0 +1,3 @@
+/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/build/CMakeFiles/MeinProgramm.dir
+/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/build/CMakeFiles/edit_cache.dir
+/home/thomas/Git/Techniker/AD9833/softwareAD9833V5/build/CMakeFiles/rebuild_cache.dir
