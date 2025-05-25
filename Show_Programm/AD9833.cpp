@@ -280,7 +280,7 @@
             std::cerr << "ERROR: COM Fehler" <<std::endl;
             return;
         }
-        if(1)
+        if(0)
         {
             std::cout   << "Send: 0x" 
                         << std::hex << std::setw(2) << std::setfill('0') << (int)txBuffer[0]
