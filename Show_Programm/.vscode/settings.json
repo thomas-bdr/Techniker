@@ -56,7 +56,9 @@
         "semaphore": "cpp",
         "stop_token": "cpp",
         "thread": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "iomanip": "cpp"
     },
     "git.ignoreLimitWarning": true,
     "C_Cpp.errorSquiggles": "enabled"

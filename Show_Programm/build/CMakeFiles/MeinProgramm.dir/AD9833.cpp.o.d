@@ -1,5 +1,5 @@
 CMakeFiles/MeinProgramm.dir/AD9833.cpp.o: \
- /home/thomas/Git/Techniker/AD9833/softwareAD9833V5/AD9833.cpp \
+ /home/thomas/Git/Techniker/Show_Programm/AD9833.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -210,7 +210,7 @@ CMakeFiles/MeinProgramm.dir/AD9833.cpp.o: \
  /usr/include/c++/12/bits/locale_conv.h \
  /usr/include/c++/12/bits/quoted_string.h /usr/include/c++/12/sstream \
  /usr/include/c++/12/bits/sstream.tcc \
- /home/thomas/Git/Techniker/AD9833/softwareAD9833V5/AD9833.h \
+ /home/thomas/Git/Techniker/Show_Programm/AD9833.h \
  /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/12/cassert /usr/include/assert.h \
  /usr/include/c++/12/array /usr/include/c++/12/compare

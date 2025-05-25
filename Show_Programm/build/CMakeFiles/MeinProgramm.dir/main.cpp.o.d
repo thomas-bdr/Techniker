@@ -1,5 +1,5 @@
 CMakeFiles/MeinProgramm.dir/main.cpp.o: \
- /home/thomas/Git/Techniker/AD9833/softwareAD9833V5/main.cpp \
+ /home/thomas/Git/Techniker/Show_Programm/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -148,8 +148,11 @@ CMakeFiles/MeinProgramm.dir/main.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc \
- /home/thomas/Git/Techniker/AD9833/softwareAD9833V5/AD9833.h \
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/chrono \
+ /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \
+ /usr/include/c++/12/limits /usr/include/c++/12/ctime \
+ /usr/include/c++/12/bits/parse_numbers.h \
+ /home/thomas/Git/Techniker/Show_Programm/AD9833.h \
  /usr/include/c++/12/math.h /usr/include/c++/12/cmath /usr/include/math.h \
  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -160,8 +163,7 @@ CMakeFiles/MeinProgramm.dir/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
  /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/aarch64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/12/bits/specfun.h /usr/include/c++/12/limits \
- /usr/include/c++/12/tr1/gamma.tcc \
+ /usr/include/c++/12/bits/specfun.h /usr/include/c++/12/tr1/gamma.tcc \
  /usr/include/c++/12/tr1/special_function_util.h \
  /usr/include/c++/12/tr1/bessel_function.tcc \
  /usr/include/c++/12/tr1/beta_function.tcc \
