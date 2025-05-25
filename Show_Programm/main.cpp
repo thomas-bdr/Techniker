@@ -56,8 +56,8 @@ struct DemoCycle
 
     void printOutRealSetup(void)
     {
-        cout << "actual Frequency Register: 0" << AD.GetActualProgrammedFrequency(REG0) << endl
-        << "actual Phase Register: 1" << AD.GetActualProgrammedPhase(REG1) << endl
+        cout << "Frequenregister0: " << AD.GetActualProgrammedFrequency(REG0) << endl
+        << "Phasenregister0: " << AD.GetActualProgrammedPhase(REG0) << endl
         << "Resolution: " << AD.GetResolution() << endl;
     }
 
@@ -67,7 +67,7 @@ struct DemoCycle
         for(int i = 1;i < 1000e6; i++){};
 
         end = clock::now();
-        cout << "Dauer Schleife 1: " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms\n";
+        cout << "Dauer Schleife: " << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms\n";
     }
 
     void repeateCycle(const double frequency)

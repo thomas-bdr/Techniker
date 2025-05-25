@@ -197,7 +197,7 @@
     {
         double phase = reg == REG0 ? phase0 : phase1;
         uint16_t phaseVal = static_cast<uint16_t>(BITS_PER_DEG * phase) & 0x0FFF;
-        cout << "Berechnete Hexp: " << std::hex << phaseVal << endl;
+        //cout << "Berechnete Hexp: " << std::hex << phaseVal << endl;
         return static_cast<double>(phaseVal)*(360.0 / 4096.0);
         
     }
